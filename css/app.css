@@ -65,7 +65,7 @@ textarea { resize: vertical; }
    Welcome
    ========================================================================== */
 
-.lockup { position: relative; top: 30%;transform: translateY(-30%); }
+.lockup { position: relative; top: 25%;transform: translateY(-25%); }
 .lockup p {
     padding:0 25px;
     margin:0;
@@ -75,7 +75,7 @@ textarea { resize: vertical; }
     font-weight: 200;
 }
 .lockup-copy { letter-spacing: 2px; }
-.cta {  position: relative; top: 35%; transform: translateY(-35%); cursor: pointer; height: auto; }
+.cta {  position: relative; top: 30%; transform: translateY(-30%); cursor: pointer; height: auto; }
 .cta-button { width:75%; margin:0 auto; border: 2px solid #fff; border-radius: 2px; }
 .cta-button h1 { color: white; font-size: 18px; padding: 4px 0 0 0; letter-spacing: 6px; text-shadow: 2px 2px 6px #000; }
 
@@ -301,6 +301,10 @@ textarea { resize: vertical; }
 /* ==========================================================================
    Share 
    ========================================================================== */
+
+.share {
+    padding:0 2%;
+}
 
 .share-menu, .social-menu {
     width:80%;
