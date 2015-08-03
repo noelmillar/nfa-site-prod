@@ -24,6 +24,14 @@ textarea { resize: vertical; }
    ========================================================================== */
 
 .text-blue { color:#37bde3; }
+.text-special {
+    color:#37bde3 !important;
+    font-family: 'Merriweather', serif !important;
+    font-size: 24px !important;
+    font-style: italic !important;
+    letter-spacing: 8px;
+    margin:6px 0 !important;
+}
 
 /* ==========================================================================
    Site Elements
@@ -38,6 +46,7 @@ textarea { resize: vertical; }
     position: absolute;
     opacity: 1;
     z-index: 99999;
+    top:-5px;
     width: 100%;
     height: 100vh;
     background: #fff;
@@ -56,10 +65,18 @@ textarea { resize: vertical; }
    Welcome
    ========================================================================== */
 
-.lockup { position: relative; top: 35%;transform: translateY(-35%); }
-.lockup p { padding:0 25px; color:white; font-size: 18px; text-shadow: 2px 2px 6px #000; font-weight: 200; }
-.cta {  position: relative; top: 40%; transform: translateY(-40%); cursor: pointer; height: auto; }
-.cta-button { width:75%; margin:0 auto; border: 2px solid #fff; }
+.lockup { position: relative; top: 30%;transform: translateY(-30%); }
+.lockup p {
+    padding:0 25px;
+    margin:0;
+    color:white;
+    font-size: 18px;
+    text-shadow: 2px 2px 6px #000;
+    font-weight: 200;
+}
+.lockup-copy { letter-spacing: 2px; }
+.cta {  position: relative; top: 35%; transform: translateY(-35%); cursor: pointer; height: auto; }
+.cta-button { width:75%; margin:0 auto; border: 2px solid #fff; border-radius: 2px; }
 .cta-button h1 { color: white; font-size: 18px; padding: 4px 0 0 0; letter-spacing: 6px; text-shadow: 2px 2px 6px #000; }
 
 /* ==========================================================================
@@ -68,8 +85,8 @@ textarea { resize: vertical; }
 
 .meet-hero {
     width:100%;
-    height:360px;
-    background: url('../img/meet-alex.jpg') no-repeat -100px -20px fixed;
+    height:330px;
+    background: url('../img/meet-alex.jpg') no-repeat -100px -40px fixed;
     -webkit-background-size: 600px 450px;
     -moz-background-size: 600px 450px;
     -o-background-size: 600px 450px;
@@ -78,7 +95,7 @@ textarea { resize: vertical; }
 
 .meet-hero-copy {
     position: relative;
-    top:75%;
+    top:70%;
     text-align: center;
     color:#fff;
     letter-spacing: 4px;
@@ -86,7 +103,9 @@ textarea { resize: vertical; }
     padding:5px 0;
 }
 
-.meet-copy { padding:15px 0; }
+.meet-copy { padding:5px 0; }
+.meet-copy p { padding:0 25px; color:#898989; font-weight: 200; font-size: 18px; }
+
 .meet-cta { width:90%; height:42px; margin:0 auto; background: #777576; box-shadow: 2px 2px 6px rgba(0,0,0,0.3); }
 .meet-cta h1 { color: white; font-size: 18px; padding: 6px 0 0 0; letter-spacing: 6px; text-shadow: 2px 2px 4px #000; cursor: pointer; }
 
@@ -121,7 +140,7 @@ textarea { resize: vertical; }
 
 .help-results {
     padding-top:0px;
-    height:350px;
+    height:325px;
 }
 
 .help-copy { padding:5px 1% 0 1%; }
@@ -146,7 +165,7 @@ textarea { resize: vertical; }
 
 .surgery-before {
     width:100%;
-    height:350px;
+    height:330px;
     background: url('../img/chest-before.jpg') no-repeat top fixed;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -158,7 +177,7 @@ textarea { resize: vertical; }
 
 .surgery-after {
     width:100%;
-    height:350px;   
+    height:330px;   
     background: url('../img/chest-after.jpg') no-repeat top fixed;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -196,30 +215,30 @@ textarea { resize: vertical; }
    ========================================================================== */
 
 .giant-titty {
-    padding:25px 0 0 0;
+    padding:15px 0 0 0;
 }
 
 .breast {
     position: relative;
     margin:0 auto;
-    width:225px;
-    height:225px;
+    width:175px;
+    height:175px;
     background: #efefef;
     border-radius: 250px;
 }
 
 .nipple {
     position: absolute;
-    width:95px;
-    height:95px;
+    width:75px;
+    height:75px;
     border-radius: 50px;
     background: #cdcdcd;
-    top:65px;
-    left:65px;
+    top:52px;
+    left:50px;
 }
 
 .donation-percentage { 
-    margin:32px auto;
+    margin:24px auto;
     font-size: 20px;
     width:35px;
 }
@@ -228,7 +247,7 @@ textarea { resize: vertical; }
     text-align: center;
     font-weight: 300;
     color:#9c9c9c;
-    padding:25px 0 0 0;
+    padding:20px 0 0 0;
     letter-spacing: 4px;
 }
 
@@ -247,12 +266,61 @@ textarea { resize: vertical; }
 }
 
 .donate-form {
-    width:50%;
+    width:70%;
     margin:0 auto;
 }
 
-.donate-form {
-    
+.donate-submit {
+    width:100%;
+    height:42px;
+    margin:0 auto;
+    background: #777576;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.donate-submit h1 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 8px 0 0 0;
+    letter-spacing: 6px;
+    cursor: pointer;
+    font-weight: 200;
+    cursor: pointer;
+   -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+
+/* ==========================================================================
+   Share 
+   ========================================================================== */
+
+.share-menu, .social-menu {
+    width:80%;
+    height:50px;
+    margin:0 auto;
+}
+
+.share-menu li, .social-menu li {
+    list-style: none;
+    float:left;
+    width:33.3%;
+    text-align: center;
+}
+
+.share-divider {
+    padding:15px 0;
+}
+
+.share-end p {
+    margin:5px 0 10px 0;
 }
 
 /* ==========================================================================
