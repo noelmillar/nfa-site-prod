@@ -3,14 +3,14 @@ $(document).ready(function() {
 
 	setTimeout(function(){
 
-		$.ajaxSetup({ cache: true });
+		// $.ajaxSetup({ cache: true });
 
-		$.getScript('//connect.facebook.net/en_US/sdk.js', function(){
-			window.facebook = FB;
-			FB.init({
-				appId: '1635391083372242',
-				version: 'v2.4'
-			});
-		});
+		// $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+		// 	window.facebook = FB;
+		// 	FB.init({
+		// 		appId: '1635391083372242',
+		// 		version: 'v2.4'
+		// 	});
+		// });
 	}, 1000);
 });

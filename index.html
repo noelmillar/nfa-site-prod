@@ -23,7 +23,7 @@
 		<![endif]-->
 		<div class="site-notification">
 			<h1>Please collapse your browser.</h1>
-			
+
 		</div>
 		<div class="row transition-layer">
 			<div class="loading">
@@ -45,7 +45,6 @@
 
 		<!--Change to Init.min.js below for production-->
 		<script type="text/javascript" src="js/app/config/Init.min.js"></script>
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script type="text/javascript" src="js/fb.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -57,5 +56,22 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1635391083372242',
+		      xfbml      : true,
+		      version    : 'v2.4'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>		
 	</body>
 </html>
