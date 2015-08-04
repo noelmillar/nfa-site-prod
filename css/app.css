@@ -414,7 +414,7 @@ cursor: pointer; height: auto; }
 .snap-share > .instructions h3 {
   position: relative;
   top:35%;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif !important;
   font-size: 18px;
   -webkit-transform: translateY(-35%);
   -moz-transform: translateY(-35%);
